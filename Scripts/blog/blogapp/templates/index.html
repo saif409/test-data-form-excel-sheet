@@ -1,0 +1,24 @@
+<div><table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">SL NO ---------- </th>
+      <th scope="col">Name ---------- </th>
+      <th scope="col">Father_Name ---------- </th>
+      <th scope="col">Mother_Name ---------- </th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for u in user %}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{ u.Name }}</td>
+      <td>{{ u.Father_Name }}</td>
+      <td>{{ u.Mother_Name }}</td>
+    </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+
+</div>
+

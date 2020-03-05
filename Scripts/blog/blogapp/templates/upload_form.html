@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<div class="contailer" style="margin-top: 70px;">
+    <div class="row">
+        <h1>upload here</h1>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input name="file" type="file" id="file" class="feedback-input">
+            <button type="submit" style="background-color: lightseagreen">Save</button>
+        </form>
+    </div>
+</div>
+</center>
+
+</body>
+</html>
